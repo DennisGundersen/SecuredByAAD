@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 		<RootNamespace>TodoList.Client.Console</RootNamespace>
 	</PropertyGroup>
 
@@ -17,6 +17,11 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Identity.Web.TokenCache" Version="2.8.0" />
 		<PackageReference Include="System.Text.Json" Version="6.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TodoList.Common.Entities\TodoList.Common.Entities.csproj" />
+	  <ProjectReference Include="..\TodoList.Common.Services\TodoList.Common.Services.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

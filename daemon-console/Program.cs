@@ -1,10 +1,10 @@
-﻿using TodoList.Client.Console.Models;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Identity.Abstractions;
 using Microsoft.Identity.Web;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TodoList.Common.Entities;
 
 // Get the Token acquirer factory instance. By default it reads an appsettings.json
 // file if it exists in the same folder as the app (make sure that the 
@@ -28,3 +28,7 @@ var api = sp.GetRequiredService<IDownstreamApi>();
 var result = await api.GetForAppAsync<IEnumerable<TodoItem>>("MyApi");
 
 Console.WriteLine($"result = {result?.Count()}");
+Console.WriteLine("");
+Console.WriteLine("     At the end of tracks and trails, dead men tell no tales");
+Console.WriteLine("");
+Console.WriteLine("Press any key to exit...");

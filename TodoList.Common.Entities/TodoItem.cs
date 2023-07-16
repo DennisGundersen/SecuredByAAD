@@ -1,4 +1,4 @@
-﻿namespace TodoList.Client.Console.Models
+﻿namespace TodoList.Common.Entities
 {
     public class TodoItem
     {
